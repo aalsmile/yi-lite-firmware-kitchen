@@ -45,7 +45,7 @@ mkdir extracted/liteos
 
 echo "Extracting picture..."
 mkdir extracted/picture
-mv extracted/out6_cut.bin extracted/picture/picture.bmp
+../bin/split_picture extracted/out6_cut.bin
 
 echo "Extracting rootfs..."
 ../bin/ubifs_dump extracted/out7_cut.bin extracted/rootfs
