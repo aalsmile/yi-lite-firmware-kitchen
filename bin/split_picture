@@ -1,0 +1,24 @@
+#!/usr/bin/perl
+#
+#
+# This script is part for extractor YI Lite Action Camera firmware
+#
+# Author: Aleksey Yakovlev
+# Site: https://aya.webhop.me
+#
+# If you use this script you are automatically agree
+# that you are responsible for your own actions
+#
+#
+# February 15, 2018
+# 
+
+undef $/;
+$_ = <>;
+$n = 0;
+
+for $content (split(/(?=\x42\x4D)/)) {
+        open(OUT, "> extracted/picture/picture" . ++$n . ".bmp");
+        print OUT $content;
+        close(OUT);
+}
