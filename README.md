@@ -35,9 +35,11 @@ UBI reader is required.
 ## Usage:
 For basic usage, put firmware '.bin' file to the main folder, rename to 'update_j11.bin' and run extract script. 
 
+    $ git clone https://github.com/aalsmile/yi-lite-firmware-kitchen.git
+    $ cd yi-lite-firmware-kitchen
     $ sudo ./extract.sh
 
-Run script with sudo because ``ubireader_extract_files`` with option -k (keep-permissions), requires running as root. See ``ubireader_extract_files --help``.
+Run script with sudo because ``ubireader_extract_files`` with option ``-k (keep-permissions)``, requires running as root. See ``ubireader_extract_files --help``.
 
 ## Partitions info:
 
