@@ -53,4 +53,7 @@ echo "Extracting rootfs..."
 echo "Extracting home..."
 ../bin/ubifs_dump extracted/out8_cut.bin extracted/home
 
+#Post operations
+rm extracted/*.bin
+
 exit 0
