@@ -37,7 +37,7 @@ For basic usage, put firmware '.bin' file to the main folder, rename to 'update_
 
     $ git clone https://github.com/aalsmile/yi-lite-firmware-kitchen.git
     $ cd yi-lite-firmware-kitchen
-    $ chmod +x extract.sh
+    $ chmod +x extract.sh && chmod +x bin/*
     $ sudo ./extract.sh
 
 Run script with sudo because ``ubireader_extract_files`` with option ``-k (keep-permissions)``, requires running as root. See ``ubireader_extract_files --help``.
