@@ -5,9 +5,11 @@ This is pre-alpha kitchen for extract Yi lite firmware. Tested on v1.8.26 and lo
 ## Dependencies:
 
 Python 2.7 is required.
+
     $ sudo apt-get install python2.7
 
 python-lzo is the only non-standard module, it may or may not be available for your distro.
+
     $ sudo apt-get install liblzo2-dev
 
     If it is available.
@@ -21,6 +23,7 @@ python-lzo is the only non-standard module, it may or may not be available for y
 Perl is required.
 
 UBI reader is required.
+
     $ git clone https://github.com/jrspruitt/ubi_reader
     $ cd ubi_reader
     $ sudo python setup.py install
@@ -31,6 +34,7 @@ UBI reader is required.
 
 ## Usage:
 For basic usage, put firmware '.bin' file to the main folder, rename to 'update_j11.bin' and run extract script. 
+
     $ sudo ./extract.sh
 
 Run script with sudo because ``ubireader_extract_files`` with option -k (keep-permissions), requires running as root. See ``ubireader_extract_files --help``.
