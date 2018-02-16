@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+#
+# This script is part for extractor YI Lite Action Camera firmware
+#
+# Author: Aleksey Yakovlev
+# Site: https://aya.webhop.me
+#
+# If you use this script you are automatically agree
+# that you are responsible for your own actions
+#
+#
+# February 15, 2018
+# 
+
+file="$1"
+path="$2"
+filename=$(basename "$file")
+filename="${filename%.*}"
+
+tail -c+65 < $file > $path"/"$filename"_cut.bin"

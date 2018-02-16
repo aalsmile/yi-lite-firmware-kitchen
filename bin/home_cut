@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+#
+# This script is part for extractor YI Lite Action Camera firmware
+#
+# Author: Aleksey Yakovlev
+# Site: https://aya.webhop.me
+#
+# If you use this script you are automatically agree
+# that you are responsible for your own actions
+#
+#
+# February 15, 2018
+# 
+
+file="$1"
+
+newfsize=$(($(stat -c '%s' $file) - 100))
+truncate -s $newfsize $file
