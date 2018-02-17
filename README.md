@@ -52,7 +52,7 @@ Run script with sudo because ``ubireader_extract_files`` with option ``-k (keep-
 * out6.bin - U-boot picture
 * out7.bin - U-boot rootfs
 * out8.bin - U-boot home
-* out9.bin - U-boot firmware version and sha256 checksum
+* out9.bin - Firmware version and sha256 checksum
 
 ## Compile firmware:
 
