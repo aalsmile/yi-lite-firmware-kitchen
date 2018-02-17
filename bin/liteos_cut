@@ -17,5 +17,4 @@ file="$1"
 path="$2"
 
 tail -c+17 < $file > extracted/liteos/liteos.gz
-newfsize=$(($(stat -c '%s' $path/liteos.gz) - 1))
-truncate -s $newfsize $path/liteos.gz
+gunzip -f -N extracted/liteos/liteos.gz
