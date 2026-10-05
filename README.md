@@ -1,6 +1,6 @@
 # YI Lite Action Camera Firmware Kitchen
 
-This is pre-alpha kitchen for extract Yi lite firmware. Tested on v1.8.26 and lower.
+This is pre-alpha kitchen for extract Yi lite firmware. Tested on v1.8.21 and lower.
 
 ## Dependencies:
 
